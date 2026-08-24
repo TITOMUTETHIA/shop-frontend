@@ -32,12 +32,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>r0dkrjd6jq</Fingerprint>
-      <Integrity>6/WwRTDHC15Li5mDw9NRlm2B/ddXSM0VAWQ9A8zgT/w=</Integrity>
+      <Fingerprint>rc73pe2t8b</Fingerprint>
+      <Integrity>+1h3viITVqYNCEZOc0b6Mf5OVRuTDQffLNa9qg6jr5s=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>888</FileLength>
-      <LastWriteTime>Mon, 24 Aug 2026 11:44:03 GMT</LastWriteTime>
+      <FileLength>907</FileLength>
+      <LastWriteTime>Mon, 24 Aug 2026 12:07:41 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css'))">
@@ -97,7 +97,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>5439</FileLength>
-      <LastWriteTime>Fri, 21 Aug 2026 13:29:29 GMT</LastWriteTime>
+      <LastWriteTime>Mon, 24 Aug 2026 13:18:49 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ShopFrontend.styles.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\_framework\blazor.modules.json'))">
