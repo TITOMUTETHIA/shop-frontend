@@ -12,11 +12,11 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShopFrontend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.3")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0.3+365a06853378c24392268814f5bc43158eb633b3")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.3.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.3+6b18cde9f5453e48f67bd8e5e71be941aabe475e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShopFrontend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShopFrontend")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.3")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.3.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("iOS26.5")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("iOS15.0")]
 
