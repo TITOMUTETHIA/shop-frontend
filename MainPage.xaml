@@ -5,10 +5,24 @@
              xmlns:components="clr-namespace:ShopFrontend.Components"
              x:Class="ShopFrontend.MainPage">
 
-    <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
-        <BlazorWebView.RootComponents>
-            <RootComponent Selector="#app" ComponentType="{x:Type local:Routes}" />
-        </BlazorWebView.RootComponents>
-    </BlazorWebView>
+    <Grid>
+        <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html" Opacity="0">
+            <BlazorWebView.RootComponents>
+                <RootComponent Selector="#app" ComponentType="{x:Type local:Routes}" />
+            </BlazorWebView.RootComponents>
+        </BlazorWebView>
+
+        <Grid x:Name="loadingScreen" BackgroundColor="#183D33" RowDefinitions="*,Auto,*">
+            <VerticalStackLayout Grid.Row="1" HorizontalOptions="Center" Spacing="16">
+                <Border BackgroundColor="#D5E94B" StrokeThickness="0" StrokeShape="RoundRectangle 14" HeightRequest="58" WidthRequest="58" HorizontalOptions="Center">
+                    <Label Text="+" TextColor="#183D33" FontSize="42" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                </Border>
+                <Label Text="freshbasket" TextColor="White" FontFamily="OpenSansRegular" FontSize="27" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+                <Label Text="fresh groceries, better days" TextColor="#A9C0AD" FontSize="12" HorizontalTextAlignment="Center" />
+                <ActivityIndicator IsRunning="True" Color="#D5E94B" WidthRequest="24" HeightRequest="24" Margin="0,14,0,0" />
+            </VerticalStackLayout>
+            <Label Grid.Row="2" Text="PREPARING YOUR SHOPPING LIST" TextColor="#7F9A87" FontSize="9" CharacterSpacing="1.8" HorizontalOptions="Center" VerticalOptions="End" Margin="0,0,0,34" />
+        </Grid>
+    </Grid>
 
 </ContentPage>
