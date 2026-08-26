@@ -66,3 +66,42 @@
 2026-08-25 08:36:31.939: [INFO] BookmarksLoadDropped droppedNodes=0
 2026-08-25 08:36:31.939: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
 2026-08-25 08:36:46.953: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-08-25 08:39:49.757: [INFO] CurrentProfilePath: C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ShopFrontend.exe.WebView2\EBWebView\Default
+2026-08-25 08:39:49.757: [INFO] Profiles total count: 1
+2026-08-25 08:39:49.758: [INFO] Profile: name=Profile 1 path=C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ShopFrontend.exe.WebView2\EBWebView\Default lastActive=2026-08-25T08:36:32.023Z
+2026-08-25 08:39:49.758: [INFO] LastUsedProfileDir: C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ShopFrontend.exe.WebView2\EBWebView\Default
+2026-08-25 08:39:49.758: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ShopFrontend.exe.WebView2\EBWebView\Default lastActive=2026-08-25T08:36:32.023Z
+2026-08-25 08:39:49.758: [INFO] OnDoneLoading sync enabled: 0
+2026-08-25 08:39:49.758: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-08-25 08:39:49.758: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-08-25 08:39:49.758: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-08-25 08:40:03.738: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-08-25 08:41:01.705: [INFO] CurrentProfilePath: C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ShopFrontend.exe.WebView2\EBWebView\Default
+2026-08-25 08:41:01.705: [INFO] Profiles total count: 1
+2026-08-25 08:41:01.706: [INFO] Profile: name=Profile 1 path=C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ShopFrontend.exe.WebView2\EBWebView\Default lastActive=2026-08-25T08:39:49.853Z
+2026-08-25 08:41:01.706: [INFO] LastUsedProfileDir: C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ShopFrontend.exe.WebView2\EBWebView\Default
+2026-08-25 08:41:01.706: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ShopFrontend.exe.WebView2\EBWebView\Default lastActive=2026-08-25T08:39:49.853Z
+2026-08-25 08:41:01.706: [INFO] OnDoneLoading sync enabled: 0
+2026-08-25 08:41:01.706: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-08-25 08:41:01.706: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-08-25 08:41:01.706: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-08-26 12:34:35.521: [INFO] CurrentProfilePath: C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ShopFrontend.exe.WebView2\EBWebView\Default
+2026-08-26 12:34:35.521: [INFO] Profiles total count: 1
+2026-08-26 12:34:35.522: [INFO] Profile: name=Profile 1 path=C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ShopFrontend.exe.WebView2\EBWebView\Default lastActive=2026-08-25T08:39:49.853Z
+2026-08-26 12:34:35.522: [INFO] LastUsedProfileDir: C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ShopFrontend.exe.WebView2\EBWebView\Default
+2026-08-26 12:34:35.522: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ShopFrontend.exe.WebView2\EBWebView\Default lastActive=2026-08-25T08:39:49.853Z
+2026-08-26 12:34:35.522: [INFO] OnDoneLoading sync enabled: 0
+2026-08-26 12:34:35.522: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-08-26 12:34:35.522: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-08-26 12:34:35.522: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-08-26 12:38:12.920: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-08-26 12:49:51.979: [INFO] CurrentProfilePath: C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ShopFrontend.exe.WebView2\EBWebView\Default
+2026-08-26 12:49:51.979: [INFO] Profiles total count: 1
+2026-08-26 12:49:51.979: [INFO] Profile: name=Profile 1 path=C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ShopFrontend.exe.WebView2\EBWebView\Default lastActive=2026-08-26T12:34:35.592Z
+2026-08-26 12:49:51.979: [INFO] LastUsedProfileDir: C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ShopFrontend.exe.WebView2\EBWebView\Default
+2026-08-26 12:49:51.980: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ShopFrontend.exe.WebView2\EBWebView\Default lastActive=2026-08-26T12:34:35.592Z
+2026-08-26 12:49:51.980: [INFO] OnDoneLoading sync enabled: 0
+2026-08-26 12:49:51.980: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-08-26 12:49:51.980: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-08-26 12:49:51.980: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-08-26 12:51:01.390: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1

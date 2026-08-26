@@ -12,12 +12,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>kmn8zot022</Fingerprint>
-      <Integrity>nFylSeTQ3ygyMJHNscjogfd4BGBCQqZTIkMSWaHaZLQ=</Integrity>
+      <Fingerprint>24axf1bej6</Fingerprint>
+      <Integrity>jgv1l0ofZ+7VFLGA0FhJytdR08DlBWRbsLJguH2it84=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>3782</FileLength>
-      <LastWriteTime>Fri, 21 Aug 2026 13:16:43 GMT</LastWriteTime>
+      <FileLength>9473</FileLength>
+      <LastWriteTime>Wed, 26 Aug 2026 12:47:06 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))">
@@ -92,12 +92,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ApplicationBundle</AssetTraitValue>
-      <Fingerprint>dyoto3s3k1</Fingerprint>
-      <Integrity>a1hbZWuYe5fBsiEgiWsqJxSHO5qY5/Pkd99VEjkG4i8=</Integrity>
+      <Fingerprint>af6ssnjask</Fingerprint>
+      <Integrity>euhgnjjV23DfNKpswFNuM9NtJpchYsPkKe8VFozQTFc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>5439</FileLength>
-      <LastWriteTime>Mon, 24 Aug 2026 13:33:38 GMT</LastWriteTime>
+      <FileLength>3065</FileLength>
+      <LastWriteTime>Wed, 26 Aug 2026 12:46:44 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ShopFrontend.styles.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\_framework\blazor.modules.json'))">

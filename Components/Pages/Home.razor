@@ -1,5 +1,41 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+<div class="dashboard">
+	<header class="dashboard-header">
+		<div><span class="eyebrow">WEDNESDAY, AUGUST 26</span><h1>Good morning, Tito <span class="wave">✦</span></h1></div>
+		<button class="icon-button notification" aria-label="Notifications">♢<span></span></button>
+	</header>
+	<section class="hero-banner">
+		<div class="hero-copy"><span class="offer-tag">WEEKLY PICK</span><h2>Good food,<br /><em>better days.</em></h2><p>Save up to 30% on fresh picks for your kitchen.</p><button class="primary-button" @onclick="ScrollToProducts">Shop this week <span>→</span></button></div>
+		<div class="hero-art" aria-hidden="true"><span class="sun"></span><span class="leaf leaf-one"></span><span class="leaf leaf-two"></span><span class="fruit fruit-one">●</span><span class="fruit fruit-two">●</span><span class="fruit fruit-three">●</span></div>
+	</section>
+	<section class="section-block categories-block">
+		<div class="section-heading"><div><span class="eyebrow">BROWSE THE AISLES</span><h2>What are you looking for?</h2></div><a href="/products">View all <span>→</span></a></div>
+		<div class="category-row">@foreach (var category in Categories) { <button class="category-tile @(SelectedCategory == category.Name ? "selected" : "")" @onclick="() => SelectCategory(category.Name)"><span class="category-art @category.ClassName">@category.Symbol</span><strong>@category.Name</strong><small>@category.Count</small></button> }</div>
+	</section>
+	<section class="shop-grid" id="products">
+		<div class="product-column section-block">
+			<div class="section-heading product-heading"><div><span class="eyebrow">JUST FOR YOU</span><h2>Popular right now</h2></div><div class="filter-tools"><label class="search-box"><span>⌕</span><input @bind="SearchTerm" placeholder="Search products" aria-label="Search products" /></label><div class="filter-pills"><button class="pill @(SelectedCategory == "All" ? "active" : "")" @onclick="SelectAll">All</button><button class="pill @(SelectedCategory == "Produce" ? "active" : "")" @onclick="SelectProduce">Fresh produce</button></div></div></div>
+			<div class="product-grid">@foreach (var product in FilteredProducts) { <article class="product-card"><div class="product-image @product.ColorClass"><span class="product-badge">@product.Badge</span><span class="product-emoji">@product.Symbol</span><button class="heart-button" aria-label="Save @product.Name">♡</button></div><div class="product-info"><span class="product-category">@product.Category</span><h3>@product.Name</h3><div class="product-bottom"><strong>$@product.Price.ToString("0.00")</strong><button class="add-button" @onclick="() => AddToBasket(product)">+</button></div></div></article> }</div>
+		</div>
+		<aside class="basket-panel"><div class="basket-header"><div><span class="eyebrow">YOUR ORDER</span><h2>My basket <span>@Basket.Count</span></h2></div><span class="basket-icon">▱</span></div><div class="basket-items">@if (Basket.Count == 0) { <p class="empty-basket">Your basket is ready for something delicious.</p> } else { @foreach (var item in Basket) { <div class="basket-item"><span class="mini-product @item.ColorClass">@item.Symbol</span><div><strong>@item.Name</strong><small>1 × $@item.Price.ToString("0.00")</small></div><b>$@item.Price.ToString("0.00")</b></div> } }</div><div class="basket-summary"><div><span>Subtotal</span><strong>$@Subtotal.ToString("0.00")</strong></div><div><span>Delivery</span><strong class="free">FREE</strong></div><div class="total"><span>Total</span><strong>$@Subtotal.ToString("0.00")</strong></div><button class="checkout-button" disabled="@(Basket.Count == 0)">Go to checkout <span>→</span></button></div></aside>
+	</section>
+	<section class="promo-strip"><div class="promo-mark">✦</div><div><span class="eyebrow">FRESHNESS GUARANTEED</span><h2>Love it fresh or we make it right.</h2></div><a href="/products">Our promise <span>→</span></a></section>
+</div>
 
-Welcome to your new app.
+@code {
+	private string SelectedCategory { get; set; } = "All";
+	private string SearchTerm { get; set; } = string.Empty;
+	private List<Product> Basket { get; } = new();
+	private decimal Subtotal => Basket.Sum(product => product.Price);
+	private IEnumerable<Product> FilteredProducts => Products.Where(product => (SelectedCategory == "All" || product.Category == SelectedCategory) && (string.IsNullOrWhiteSpace(SearchTerm) || product.Name.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase)));
+	private List<Category> Categories { get; } = new() { new("Produce", "12 items", "✿", "green"), new("Bakery", "8 items", "⌁", "yellow"), new("Pantry", "24 items", "▥", "orange"), new("Drinks", "16 items", "◒", "blue") };
+	private List<Product> Products { get; } = new() { new("Avocado", "Produce", 1.49m, "●", "green-product", "RIPE"), new("Sourdough loaf", "Bakery", 4.50m, "◒", "brown-product", "BAKED TODAY"), new("Strawberries", "Produce", 3.99m, "●", "pink-product", "IN SEASON"), new("Oat milk", "Drinks", 3.25m, "▥", "cream-product", "POPULAR") };
+	private void SelectCategory(string category) => SelectedCategory = category;
+	private void SelectAll() => SelectCategory("All");
+	private void SelectProduce() => SelectCategory("Produce");
+	private void AddToBasket(Product product) { if (!Basket.Contains(product)) Basket.Add(product); }
+	private void ScrollToProducts() { }
+	private record Category(string Name, string Count, string Symbol, string ClassName);
+	private record Product(string Name, string Category, decimal Price, string Symbol, string ColorClass, string Badge);
+}

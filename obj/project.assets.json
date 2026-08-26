@@ -1,7 +1,7 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
-    "net10.0-ios26.5": {
+    "net10.0-ios": {
       "Microsoft.AspNetCore.Authorization/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -437,6 +437,30 @@
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http/10.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Diagnostics": "10.0.0",
+          "Microsoft.Extensions.Logging": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Options": "10.0.0"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
             "related": ".xml"
           }
         },
@@ -818,14 +842,14 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.2": {
+      "Microsoft.NET.ILLink.Tasks/10.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       }
     },
-    "net10.0-ios26.5/iossimulator-x64": {
+    "net10.0-ios/iossimulator-x64": {
       "Microsoft.AspNetCore.Authorization/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -1261,6 +1285,30 @@
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http/10.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Diagnostics": "10.0.0",
+          "Microsoft.Extensions.Logging": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Options": "10.0.0"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
             "related": ".xml"
           }
         },
@@ -1642,14 +1690,14 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.2": {
+      "Microsoft.NET.ILLink.Tasks/10.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       }
     },
-    "net10.0-ios26.5/maccatalyst-x64": {
+    "net10.0-ios/maccatalyst-x64": {
       "Microsoft.AspNetCore.Authorization/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -2085,6 +2133,30 @@
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http/10.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Diagnostics": "10.0.0",
+          "Microsoft.Extensions.Logging": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Options": "10.0.0"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
             "related": ".xml"
           }
         },
@@ -2466,14 +2538,14 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.2": {
+      "Microsoft.NET.ILLink.Tasks/10.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       }
     },
-    "net10.0-ios26.5/win-x64": {
+    "net10.0-ios/win-x64": {
       "Microsoft.AspNetCore.Authorization/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -2909,6 +2981,30 @@
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http/10.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Diagnostics": "10.0.0",
+          "Microsoft.Extensions.Logging": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Options": "10.0.0"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
             "related": ".xml"
           }
         },
@@ -3290,14 +3386,14 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.2": {
+      "Microsoft.NET.ILLink.Tasks/10.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       }
     },
-    "net10.0-maccatalyst26.5": {
+    "net10.0-maccatalyst": {
       "Microsoft.AspNetCore.Authorization/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -3740,6 +3836,30 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Http/10.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Diagnostics": "10.0.0",
+          "Microsoft.Extensions.Logging": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Options": "10.0.0"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "Microsoft.Extensions.Logging/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -4114,14 +4234,14 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.2": {
+      "Microsoft.NET.ILLink.Tasks/10.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       }
     },
-    "net10.0-maccatalyst26.5/iossimulator-x64": {
+    "net10.0-maccatalyst/iossimulator-x64": {
       "Microsoft.AspNetCore.Authorization/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -4564,6 +4684,30 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Http/10.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Diagnostics": "10.0.0",
+          "Microsoft.Extensions.Logging": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Options": "10.0.0"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "Microsoft.Extensions.Logging/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -4938,14 +5082,14 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.2": {
+      "Microsoft.NET.ILLink.Tasks/10.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       }
     },
-    "net10.0-maccatalyst26.5/maccatalyst-x64": {
+    "net10.0-maccatalyst/maccatalyst-x64": {
       "Microsoft.AspNetCore.Authorization/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -5388,6 +5532,30 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Http/10.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Diagnostics": "10.0.0",
+          "Microsoft.Extensions.Logging": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Options": "10.0.0"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "Microsoft.Extensions.Logging/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -5762,14 +5930,14 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.2": {
+      "Microsoft.NET.ILLink.Tasks/10.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       }
     },
-    "net10.0-maccatalyst26.5/win-x64": {
+    "net10.0-maccatalyst/win-x64": {
       "Microsoft.AspNetCore.Authorization/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -6212,6 +6380,30 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Http/10.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Diagnostics": "10.0.0",
+          "Microsoft.Extensions.Logging": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Options": "10.0.0"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "Microsoft.Extensions.Logging/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -6586,14 +6778,14 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.2": {
+      "Microsoft.NET.ILLink.Tasks/10.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       }
     },
-    "net10.0-windows10.0.19041": {
+    "net10.0-windows10.0.19041.0": {
       "Microsoft.AspNetCore.Authorization/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -7029,6 +7221,30 @@
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http/10.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Diagnostics": "10.0.0",
+          "Microsoft.Extensions.Logging": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Options": "10.0.0"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
             "related": ".xml"
           }
         },
@@ -7668,7 +7884,7 @@
         }
       }
     },
-    "net10.0-windows10.0.19041/iossimulator-x64": {
+    "net10.0-windows10.0.19041.0/iossimulator-x64": {
       "Microsoft.AspNetCore.Authorization/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -8104,6 +8320,30 @@
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http/10.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Diagnostics": "10.0.0",
+          "Microsoft.Extensions.Logging": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Options": "10.0.0"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
             "related": ".xml"
           }
         },
@@ -8681,7 +8921,7 @@
         }
       }
     },
-    "net10.0-windows10.0.19041/maccatalyst-x64": {
+    "net10.0-windows10.0.19041.0/maccatalyst-x64": {
       "Microsoft.AspNetCore.Authorization/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -9117,6 +9357,30 @@
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http/10.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Diagnostics": "10.0.0",
+          "Microsoft.Extensions.Logging": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Options": "10.0.0"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
             "related": ".xml"
           }
         },
@@ -9694,7 +9958,7 @@
         }
       }
     },
-    "net10.0-windows10.0.19041/win-x64": {
+    "net10.0-windows10.0.19041.0/win-x64": {
       "Microsoft.AspNetCore.Authorization/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -10130,6 +10394,30 @@
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http/10.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Diagnostics": "10.0.0",
+          "Microsoft.Extensions.Logging": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Options": "10.0.0"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
             "related": ".xml"
           }
         },
@@ -11318,6 +11606,35 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.Extensions.Http/10.0.0": {
+      "sha512": "r+mSvm/Ryc/iYcc9zcUG5VP9EBB8PL1rgVU6macEaYk45vmGRk9PntM3aynFKN6s3Q4WW36kedTycIctctpTUQ==",
+      "type": "package",
+      "path": "microsoft.extensions.http/10.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Http.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Http.targets",
+        "lib/net10.0/Microsoft.Extensions.Http.dll",
+        "lib/net10.0/Microsoft.Extensions.Http.xml",
+        "lib/net462/Microsoft.Extensions.Http.dll",
+        "lib/net462/Microsoft.Extensions.Http.xml",
+        "lib/net8.0/Microsoft.Extensions.Http.dll",
+        "lib/net8.0/Microsoft.Extensions.Http.xml",
+        "lib/net9.0/Microsoft.Extensions.Http.dll",
+        "lib/net9.0/Microsoft.Extensions.Http.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Http.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Http.xml",
+        "microsoft.extensions.http.10.0.0.nupkg.sha512",
+        "microsoft.extensions.http.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "Microsoft.Extensions.Logging/10.0.0": {
       "sha512": "BStFkd5CcnEtarlcgYDBcFzGYCuuNMzPs02wN3WBsOFoYIEmYoUdAiU+au6opzoqfTYJsMTW00AeqDdnXH2CvA==",
       "type": "package",
@@ -12331,10 +12648,10 @@
         "microsoft.maui.resizetizer.nuspec"
       ]
     },
-    "Microsoft.NET.ILLink.Tasks/10.0.2": {
-      "sha512": "sXdDtMf2qcnbygw9OdE535c2lxSxrZP8gO4UhDJ0xiJbl1wIqXS1OTcTDFTIJPOFd6Mhcm8gPEthqWGUxBsTqw==",
+    "Microsoft.NET.ILLink.Tasks/10.0.11": {
+      "sha512": "IBf7lbovvjGWVWXZX5cJ/cO0WXbId0Zq4BuSeT94mGZuOAP66oMeH9PTBZ9Jpp3Jb6jtK0qm/NyUbPRo1gC/wQ==",
       "type": "package",
-      "path": "microsoft.net.illink.tasks/10.0.2",
+      "path": "microsoft.net.illink.tasks/10.0.11",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -12347,7 +12664,7 @@
         "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.10.0.2.nupkg.sha512",
+        "microsoft.net.illink.tasks.10.0.11.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net/ILLink.Tasks.deps.json",
         "tools/net/ILLink.Tasks.dll",
@@ -13248,26 +13565,30 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net10.0-ios26.5": [
+    "net10.0-ios": [
       "Microsoft.AspNetCore.Components.WebView.Maui >= 10.0.20",
+      "Microsoft.Extensions.Http >= 10.0.0",
       "Microsoft.Extensions.Logging.Debug >= 10.0.0",
       "Microsoft.Maui.Controls >= 10.0.20",
-      "Microsoft.NET.ILLink.Tasks >= 10.0.2"
+      "Microsoft.NET.ILLink.Tasks >= 10.0.11"
     ],
-    "net10.0-maccatalyst26.5": [
+    "net10.0-maccatalyst": [
       "Microsoft.AspNetCore.Components.WebView.Maui >= 10.0.20",
+      "Microsoft.Extensions.Http >= 10.0.0",
       "Microsoft.Extensions.Logging.Debug >= 10.0.0",
       "Microsoft.Maui.Controls >= 10.0.20",
-      "Microsoft.NET.ILLink.Tasks >= 10.0.2"
+      "Microsoft.NET.ILLink.Tasks >= 10.0.11"
     ],
-    "net10.0-windows10.0.19041": [
+    "net10.0-windows10.0.19041.0": [
       "Microsoft.AspNetCore.Components.WebView.Maui >= 10.0.20",
+      "Microsoft.Extensions.Http >= 10.0.0",
       "Microsoft.Extensions.Logging.Debug >= 10.0.0",
       "Microsoft.Maui.Controls >= 10.0.20"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -13279,8 +13600,13 @@
       "outputPath": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\WORKING FOLDER\\tito\\supermarket\\ShopFrontend\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net10.0-ios",
@@ -13288,19 +13614,23 @@
         "net10.0-windows10.0.19041.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net10.0-ios26.5": {
+        "net10.0-ios": {
+          "framework": "net10.0-ios26.5",
           "targetAlias": "net10.0-ios",
           "projectReferences": {}
         },
-        "net10.0-maccatalyst26.5": {
+        "net10.0-maccatalyst": {
+          "framework": "net10.0-maccatalyst26.5",
           "targetAlias": "net10.0-maccatalyst",
           "projectReferences": {}
         },
-        "net10.0-windows10.0.19041": {
+        "net10.0-windows10.0.19041.0": {
+          "framework": "net10.0-windows10.0.19041",
           "targetAlias": "net10.0-windows10.0.19041.0",
           "projectReferences": {}
         }
@@ -13315,15 +13645,20 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
-      "net10.0-ios26.5": {
+      "net10.0-ios": {
+        "framework": "net10.0-ios26.5",
         "targetAlias": "net10.0-ios",
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": {
             "target": "Package",
             "version": "[10.0.20, )"
+          },
+          "Microsoft.Extensions.Http": {
+            "target": "Package",
+            "version": "[10.0.0, )"
           },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
@@ -13336,7 +13671,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[10.0.2, )",
+            "version": "[10.0.11, )",
             "autoReferenced": true
           }
         },
@@ -13351,12 +13686,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[10.0.9, 10.0.9]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.iOS": {
             "privateAssets": "all"
@@ -13368,7 +13697,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -13644,12 +13973,17 @@
           "System.Xml.XPath.XDocument": "(,5.0.32767]"
         }
       },
-      "net10.0-maccatalyst26.5": {
+      "net10.0-maccatalyst": {
+        "framework": "net10.0-maccatalyst26.5",
         "targetAlias": "net10.0-maccatalyst",
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": {
             "target": "Package",
             "version": "[10.0.20, )"
+          },
+          "Microsoft.Extensions.Http": {
+            "target": "Package",
+            "version": "[10.0.0, )"
           },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
@@ -13662,7 +13996,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[10.0.2, )",
+            "version": "[10.0.11, )",
             "autoReferenced": true
           }
         },
@@ -13678,12 +14012,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[10.0.9, 10.0.9]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.MacCatalyst": {
             "privateAssets": "all"
@@ -13695,7 +14023,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -13971,12 +14299,17 @@
           "System.Xml.XPath.XDocument": "(,5.0.32767]"
         }
       },
-      "net10.0-windows10.0.19041": {
+      "net10.0-windows10.0.19041.0": {
+        "framework": "net10.0-windows10.0.19041",
         "targetAlias": "net10.0-windows10.0.19041.0",
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": {
             "target": "Package",
             "version": "[10.0.20, )"
+          },
+          "Microsoft.Extensions.Http": {
+            "target": "Package",
+            "version": "[10.0.0, )"
           },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
@@ -14012,7 +14345,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

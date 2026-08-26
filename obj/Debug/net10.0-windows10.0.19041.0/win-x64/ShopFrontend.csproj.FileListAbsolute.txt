@@ -42,7 +42,6 @@ C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarke
 C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\_framework\blazor.modules.json
 C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\_framework\blazor.webview.js
 C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\ShopFrontend.styles.css
-C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\ShopFrontend.dyoto3s3k1.bundle.scp.css
 C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\app.css
 C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\index.html
 C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
@@ -568,3 +567,5 @@ C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarke
 C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\obj\Debug\net10.0-windows10.0.19041.0\win-x64\qualifiers.txt
 C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\obj\Debug\net10.0-windows10.0.19041.0\win-x64\qualifiers.txt.intermediate
 C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\obj\Debug\net10.0-windows10.0.19041.0\win-x64\MultipleQualifiersPerDimensionFound.txt
+C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\wwwroot\ShopFrontend.af6ssnjask.bundle.scp.css
+C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\Microsoft.Extensions.Http.dll

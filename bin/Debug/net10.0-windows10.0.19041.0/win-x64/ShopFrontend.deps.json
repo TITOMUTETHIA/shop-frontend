@@ -10,6 +10,7 @@
       "ShopFrontend/1.0.3": {
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "10.0.20",
+          "Microsoft.Extensions.Http": "10.0.0",
           "Microsoft.Extensions.Logging.Debug": "10.0.0",
           "Microsoft.Maui.Controls": "10.0.20",
           "Microsoft.Web.WebView2.Core.Projection": "1.0.3179.45",
@@ -293,6 +294,22 @@
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.52411"
+          }
+        }
+      },
+      "Microsoft.Extensions.Http/10.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Diagnostics": "10.0.0",
+          "Microsoft.Extensions.Logging": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Options": "10.0.0"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
             "assemblyVersion": "10.0.0.0",
             "fileVersion": "10.0.25.52411"
           }
@@ -906,6 +923,13 @@
       "sha512": "sha512-KrN6TGFwCwqOkLLk/idW/XtDQh+8In+CL9T4M1Dx+5ScsjTq4TlVbal8q532m82UYrMr6RiQJF2HvYCN0QwVsA==",
       "path": "microsoft.extensions.hosting.abstractions/10.0.0",
       "hashPath": "microsoft.extensions.hosting.abstractions.10.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Http/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-r+mSvm/Ryc/iYcc9zcUG5VP9EBB8PL1rgVU6macEaYk45vmGRk9PntM3aynFKN6s3Q4WW36kedTycIctctpTUQ==",
+      "path": "microsoft.extensions.http/10.0.0",
+      "hashPath": "microsoft.extensions.http.10.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging/10.0.0": {
       "type": "package",

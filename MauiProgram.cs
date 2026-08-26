@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using ShopFrontend.Services;
 
 namespace ShopFrontend;
 
@@ -15,6 +16,10 @@ public static class MauiProgram
 			});
 
 		builder.Services.AddMauiBlazorWebView();
+		builder.Services.AddHttpClient<IShopCatalogService, ShopCatalogService>(client =>
+		{
+			client.BaseAddress = new Uri("https://api.example.test/");
+		});
 
 #if DEBUG
 		builder.Services.AddBlazorWebViewDeveloperTools();

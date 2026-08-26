@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "poE+3LOTk7U=",
+  "dgSpecHash": "Tx+6TflRmT0=",
   "success": true,
   "projectFilePath": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\WORKING FOLDER\\tito\\supermarket\\ShopFrontend\\ShopFrontend.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\10.0.0\\microsoft.extensions.fileproviders.physical.10.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\10.0.0\\microsoft.extensions.filesystemglobbing.10.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\10.0.0\\microsoft.extensions.hosting.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.http\\10.0.0\\microsoft.extensions.http.10.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.logging\\10.0.0\\microsoft.extensions.logging.10.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.0\\microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.logging.debug\\10.0.0\\microsoft.extensions.logging.debug.10.0.0.nupkg.sha512",
@@ -46,13 +47,11 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.maui.graphics\\10.0.20\\microsoft.maui.graphics.10.0.20.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\10.0.20\\microsoft.maui.graphics.win2d.winui.desktop.10.0.20.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.maui.resizetizer\\10.0.20\\microsoft.maui.resizetizer.10.0.20.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.net.illink.tasks\\10.0.2\\microsoft.net.illink.tasks.10.0.2.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.net.illink.tasks\\10.0.11\\microsoft.net.illink.tasks.10.0.11.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.web.webview2\\1.0.3179.45\\microsoft.web.webview2.1.0.3179.45.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.windowsappsdk\\1.7.250909003\\microsoft.windowsappsdk.1.7.250909003.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.netcore.app.ref\\10.0.9\\microsoft.netcore.app.ref.10.0.9.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.netcore.app.ref\\10.0.9\\microsoft.netcore.app.ref.10.0.9.nupkg.sha512"
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
   ],
   "logs": []
 }

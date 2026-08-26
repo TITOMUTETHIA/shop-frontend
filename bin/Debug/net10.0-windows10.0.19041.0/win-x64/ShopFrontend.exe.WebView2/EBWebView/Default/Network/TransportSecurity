@@ -1,1 +1,1 @@
-{"sts":[{"expiry":1819182221.61336,"host":"OuKlWsMW1dkkbI1X/oi6o0Y95ZNSWnSoeaIXAEYPlv4=","mode":"force-https","sts_include_subdomains":true,"sts_observed":1787646221.613371}],"version":2}
+{"sts":[{"expiry":1819284618.566562,"host":"OuKlWsMW1dkkbI1X/oi6o0Y95ZNSWnSoeaIXAEYPlv4=","mode":"force-https","sts_include_subdomains":true,"sts_observed":1787748618.566571},{"expiry":1819284593.151114,"host":"nAuqgR4iEWti7SOdT3UHPl6rmZU/DeaIm38P2O2OkgA=","mode":"force-https","sts_include_subdomains":false,"sts_observed":1787748593.151128}],"version":2}
