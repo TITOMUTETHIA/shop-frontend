@@ -1098,6 +1098,19 @@
             "rid": "win-x86"
           }
         }
+      },
+      "ShopFrontend.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/ShopFrontend.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopFrontend.Shared.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     },
     "net10.0-windows10.0.19041.0/win-x64": {
@@ -2145,6 +2158,19 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
+      },
+      "ShopFrontend.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/ShopFrontend.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopFrontend.Shared.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -4654,6 +4680,11 @@
         "tools/x64/GenXbf.dll",
         "tools/x86/GenXbf.dll"
       ]
+    },
+    "ShopFrontend.Shared/1.0.0": {
+      "type": "project",
+      "path": "ShopFrontend.Shared/ShopFrontend.Shared.csproj",
+      "msbuildProject": "ShopFrontend.Shared/ShopFrontend.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4661,7 +4692,8 @@
       "Microsoft.AspNetCore.Components.WebView.Maui >= 10.0.20",
       "Microsoft.Extensions.Http >= 10.0.0",
       "Microsoft.Extensions.Logging.Debug >= 10.0.0",
-      "Microsoft.Maui.Controls >= 10.0.20"
+      "Microsoft.Maui.Controls >= 10.0.20",
+      "ShopFrontend.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4698,7 +4730,11 @@
         "net10.0-windows10.0.19041.0": {
           "framework": "net10.0-windows10.0.19041",
           "targetAlias": "net10.0-windows10.0.19041.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\WORKING FOLDER\\tito\\supermarket\\ShopFrontend\\ShopFrontend.Shared\\ShopFrontend.Shared.csproj": {
+              "projectPath": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\WORKING FOLDER\\tito\\supermarket\\ShopFrontend\\ShopFrontend.Shared\\ShopFrontend.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

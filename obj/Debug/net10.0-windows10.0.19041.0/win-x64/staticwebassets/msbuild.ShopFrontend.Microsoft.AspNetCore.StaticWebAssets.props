@@ -12,12 +12,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>nxc4l4uwtm</Fingerprint>
-      <Integrity>hUD3827qKOXKGPQc97y/zWYeffAx82NWuEtggTJowh8=</Integrity>
+      <Fingerprint>z5ettg6cxm</Fingerprint>
+      <Integrity>CTbbe8NSnxznvqUdlW2IBiJbrq8ziW8TiKwZ5sfoHMQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>12972</FileLength>
-      <LastWriteTime>Wed, 26 Aug 2026 13:03:48 GMT</LastWriteTime>
+      <FileLength>12969</FileLength>
+      <LastWriteTime>Thu, 27 Aug 2026 11:05:20 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\brand_mark.svg'))">
@@ -52,12 +52,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6flbh99hr7</Fingerprint>
-      <Integrity>znkDnWziOt/Vwi7DjCFCWo127pXYADXHQZsWyEz93fU=</Integrity>
+      <Fingerprint>ctoypzx20f</Fingerprint>
+      <Integrity>4JhIwiQsUhvNqDITMzBs2xyD/pCtKqVYjngPxFoPL+I=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>845</FileLength>
-      <LastWriteTime>Wed, 26 Aug 2026 13:41:23 GMT</LastWriteTime>
+      <FileLength>947</FileLength>
+      <LastWriteTime>Thu, 27 Aug 2026 11:14:08 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css'))">
@@ -99,26 +99,6 @@
       <FileLength>589893</FileLength>
       <LastWriteTime>Fri, 21 Aug 2026 13:16:43 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css.map'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ShopFrontend.styles.css'))">
-      <SourceType>Package</SourceType>
-      <SourceId>ShopFrontend</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>/</BasePath>
-      <RelativePath>ShopFrontend.styles.css</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>CurrentProject</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName>ScopedCss</AssetTraitName>
-      <AssetTraitValue>ApplicationBundle</AssetTraitValue>
-      <Fingerprint>0lz1oow0r3</Fingerprint>
-      <Integrity>ZOJg2gOZcJAT3mUJMmoeX81uDkBC6UD8yi9HuuLOGaQ=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>8537</FileLength>
-      <LastWriteTime>Thu, 27 Aug 2026 09:41:52 GMT</LastWriteTime>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ShopFrontend.styles.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\_framework\blazor.modules.json'))">
       <SourceType>Package</SourceType>

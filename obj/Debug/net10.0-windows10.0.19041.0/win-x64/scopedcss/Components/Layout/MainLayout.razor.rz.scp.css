@@ -1,5 +1,0 @@
-.page[b-ejnlv3p54h] { min-height: 100vh; }
-main[b-ejnlv3p54h] { flex: 1; }
-.app-shell[b-ejnlv3p54h] { min-height: 100vh; display: block; background: #f7f8f3; }
-.app-main[b-ejnlv3p54h] { min-width: 0; width: 100%; animation: page-enter-b-ejnlv3p54h .38s ease both; }
-@keyframes page-enter-b-ejnlv3p54h { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }

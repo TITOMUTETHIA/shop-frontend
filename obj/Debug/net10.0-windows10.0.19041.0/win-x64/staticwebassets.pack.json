@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets\\_framework\\blazor.webview.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\WORKING FOLDER\\tito\\supermarket\\ShopFrontend\\obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\scopedcss\\bundle\\ShopFrontend.styles.css",
-      "PackagePath": "staticwebassets\\ShopFrontend.styles.css"
-    },
-    {
       "Id": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\WORKING FOLDER\\tito\\supermarket\\ShopFrontend\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },

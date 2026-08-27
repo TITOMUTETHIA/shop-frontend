@@ -2,7 +2,7 @@
 @using ShopFrontend.Components.Layout
 @using ShopFrontend.Components.Pages
 
-<Router AppAssembly="@typeof(MauiProgram).Assembly" NotFoundPage="@typeof(NotFound)">
+<Router AppAssembly="@typeof(Routes).Assembly" NotFoundPage="@typeof(NotFound)">
     <Found Context="routeData">
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
         <FocusOnNavigate RouteData="@routeData" Selector="h1" />
