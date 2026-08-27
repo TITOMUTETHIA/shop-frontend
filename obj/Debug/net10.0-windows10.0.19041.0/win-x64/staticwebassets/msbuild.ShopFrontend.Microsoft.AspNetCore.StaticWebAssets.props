@@ -112,12 +112,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ApplicationBundle</AssetTraitValue>
-      <Fingerprint>3a4qx9btae</Fingerprint>
-      <Integrity>1fK6y06CDIaWLhThzSBbOPno2RuyeSos/TQLwNXa/O8=</Integrity>
+      <Fingerprint>0lz1oow0r3</Fingerprint>
+      <Integrity>ZOJg2gOZcJAT3mUJMmoeX81uDkBC6UD8yi9HuuLOGaQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>3850</FileLength>
-      <LastWriteTime>Thu, 27 Aug 2026 09:14:34 GMT</LastWriteTime>
+      <FileLength>8537</FileLength>
+      <LastWriteTime>Thu, 27 Aug 2026 09:41:52 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ShopFrontend.styles.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\_framework\blazor.modules.json'))">
