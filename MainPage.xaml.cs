@@ -11,9 +11,14 @@ public partial class MainPage : ContentPage
 	private async void OnPageLoaded(object? sender, EventArgs e)
 	{
 		Loaded -= OnPageLoaded;
-		await Task.Delay(650);
-		await blazorWebView.FadeToAsync(1, 350, Easing.CubicOut);
-		await loadingScreen.FadeToAsync(0, 300, Easing.CubicIn);
-		loadingScreen.IsVisible = false;
+		try
+		{
+			await Task.Delay(650);
+			await loadingScreen.FadeToAsync(0, 300, Easing.CubicIn);
+		}
+		finally
+		{
+			loadingScreen.IsVisible = false;
+		}
 	}
 }

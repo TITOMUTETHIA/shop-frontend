@@ -1,8 +1,32 @@
 ﻿@inherits LayoutComponentBase
 
+@implements IDisposable
+@inject NavigationManager Navigation
+
 <div class="app-shell">
     <NavMenu />
-    <main class="app-main">
+    <main class="app-main" @key="currentPath">
         @Body
     </main>
 </div>
+
+@code {
+    private string currentPath = string.Empty;
+
+    protected override void OnInitialized()
+    {
+        currentPath = Navigation.Uri;
+        Navigation.LocationChanged += HandleLocationChanged;
+    }
+
+    private void HandleLocationChanged(object? sender, LocationChangedEventArgs args)
+    {
+        currentPath = args.Location;
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        Navigation.LocationChanged -= HandleLocationChanged;
+    }
+}

@@ -1,6 +1,5 @@
 .page { min-height: 100vh; }
 main { flex: 1; }
-.app-shell { min-height: 100vh; display: flex; background: #f7f8f3; }
-.app-main { min-width: 0; width: 100%; }
-@media (min-width: 900px) { .app-shell { padding-left: 248px; } .side-nav { position: fixed; left: 0; top: 0; bottom: 0; width: 248px; } }
-@media (max-width: 899px) { .side-nav { display: none; } .app-main { padding-bottom: 76px; } }
+.app-shell { min-height: 100vh; display: block; background: #f7f8f3; }
+.app-main { min-width: 0; width: 100%; animation: page-enter .38s ease both; }
+@keyframes page-enter { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }

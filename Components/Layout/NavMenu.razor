@@ -1,6 +1,6 @@
-﻿<aside class="side-nav">
-    <a class="brand" href="/">
-        <span class="brand-mark">+</span>
+﻿<header class="top-nav">
+    <a class="brand" href="/" aria-label="Freshbasket home">
+        <span class="brand-mark"><img src="/brand_mark.svg" alt="" /></span>
         <span>fresh<span class="brand-accent">basket</span></span>
     </a>
     <div class="delivery-note"><span class="status-dot"></span><span>Delivering today<br /><strong>to your doorstep</strong></span></div>
@@ -10,14 +10,8 @@
         <NavLink href="/carts"><span class="nav-icon">▱</span>My basket</NavLink>
         <NavLink href="/checkout"><span class="nav-icon">✓</span>Orders</NavLink>
     </nav>
-    <div class="nav-footer">
-        <NavLink href="/login"><span class="nav-icon">◯</span>Account</NavLink>
-        <div class="help-card"><strong>Need a hand?</strong><span>We are here for you.</span><a href="mailto:hello@freshbasket.test">Contact support</a></div>
+    <div class="nav-actions">
+        <a class="support-link" href="mailto:hello@freshbasket.test">Need a hand?</a>
+        <NavLink class="account-link" href="/login"><img src="/brand_mark.svg" alt="" /><span>Account</span></NavLink>
     </div>
-</aside>
-<nav class="mobile-nav" aria-label="Mobile navigation">
-    <NavLink href="/" Match="NavLinkMatch.All"><span>⌂</span>Home</NavLink>
-    <NavLink href="/products"><span>▦</span>Shop</NavLink>
-    <NavLink href="/carts"><span>▱</span>Basket</NavLink>
-    <NavLink href="/login"><span>◯</span>Account</NavLink>
-</nav>
+</header>

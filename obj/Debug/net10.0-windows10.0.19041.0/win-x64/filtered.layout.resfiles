@@ -3,6 +3,11 @@ wwwroot\_framework\blazor.webview.js
 Components\Layout\MainLayout.razor.css
 Components\Layout\NavMenu.razor.css
 OpenSans-Regular.ttf
+brand_mark.scale-100.png
+brand_mark.scale-125.png
+brand_mark.scale-150.png
+brand_mark.scale-200.png
+brand_mark.scale-400.png
 icon_bot.scale-100.png
 icon_bot.scale-125.png
 icon_bot.scale-150.png
@@ -60,9 +65,10 @@ splashSplashScreen.scale-150.png
 splashSplashScreen.scale-200.png
 splashSplashScreen.scale-400.png
 wwwroot\ShopFrontend.styles.css
-wwwroot\ShopFrontend.af6ssnjask.bundle.scp.css
+wwwroot\ShopFrontend.3a4qx9btae.bundle.scp.css
 AboutAssets.txt
 wwwroot\app.css
+wwwroot\brand_mark.svg
 wwwroot\index.html
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map

@@ -6,13 +6,13 @@
              x:Class="ShopFrontend.MainPage">
 
     <Grid>
-        <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html" Opacity="0">
+        <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html" HorizontalOptions="Fill" VerticalOptions="Fill">
             <BlazorWebView.RootComponents>
                 <RootComponent Selector="#app" ComponentType="{x:Type local:Routes}" />
             </BlazorWebView.RootComponents>
         </BlazorWebView>
 
-        <Grid x:Name="loadingScreen" BackgroundColor="#183D33" RowDefinitions="*,Auto,*">
+        <Grid x:Name="loadingScreen" ZIndex="10" BackgroundColor="#183D33" RowDefinitions="*,Auto,*">
             <VerticalStackLayout Grid.Row="1" HorizontalOptions="Center" Spacing="16">
                 <Border BackgroundColor="#D5E94B" StrokeThickness="0" StrokeShape="RoundRectangle 14" HeightRequest="58" WidthRequest="58" HorizontalOptions="Center">
                     <Label Text="+" TextColor="#183D33" FontSize="42" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
