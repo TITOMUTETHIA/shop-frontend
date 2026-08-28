@@ -1,6 +1,0 @@
-.page[b-ejnlv3p54h] { min-height: 100vh; }
-main[b-ejnlv3p54h] { flex: 1; }
-.app-shell[b-ejnlv3p54h] { min-height: 100vh; display: flex; background: #f7f8f3; }
-.app-main[b-ejnlv3p54h] { min-width: 0; width: 100%; }
-@media (min-width: 900px) { .app-shell[b-ejnlv3p54h] { padding-left: 248px; } .side-nav[b-ejnlv3p54h] { position: fixed; left: 0; top: 0; bottom: 0; width: 248px; } }
-@media (max-width: 899px) { .side-nav[b-ejnlv3p54h] { display: none; } .app-main[b-ejnlv3p54h] { padding-bottom: 76px; } }
