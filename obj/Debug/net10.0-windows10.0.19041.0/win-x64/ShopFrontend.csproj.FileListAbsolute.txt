@@ -866,8 +866,6 @@ C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarke
 C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\Microsoft.Web.WebView2.Core.Projection.dll
 C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\Microsoft.UI.pri
 C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\bin\Debug\net10.0-windows10.0.19041.0\win-x64\Microsoft.UI.Xaml.Controls.pri
-C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\obj\Debug\net10.0-windows10.0.19041.0\win-x64\EmbeddedAttribute.cs
-C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\obj\Debug\net10.0-windows10.0.19041.0\win-x64\ValidatableTypeAttribute.cs
 C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\obj\Debug\net10.0-windows10.0.19041.0\win-x64\ShopFrontend.csproj.AssemblyReference.cache
 C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\obj\Debug\net10.0-windows10.0.19041.0\win-x64\rpswa.dswa.cache.json
 C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\WORKING FOLDER\tito\supermarket\ShopFrontend\obj\Debug\net10.0-windows10.0.19041.0\win-x64\rjimswa.dswa.cache.json

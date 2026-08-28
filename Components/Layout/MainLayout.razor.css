@@ -1,5 +1,0 @@
-.page { min-height: 100vh; }
-main { flex: 1; }
-.app-shell { min-height: 100vh; display: block; background: #f7f8f3; }
-.app-main { min-width: 0; width: 100%; animation: page-enter .38s ease both; }
-@keyframes page-enter { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
