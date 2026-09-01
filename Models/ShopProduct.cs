@@ -1,10 +1,9 @@
 namespace ShopFrontend.Models;
 
-public sealed record ShopProduct(
-    int Id,
-    string Name,
-    string Category,
-    decimal Price,
-    string Symbol,
-    string ColorClass,
-    string Badge);
+public class ShopCustomer
+{
+    public int Id { get; set; }
+    public string FullName { get; set; }
+    public string Email { get; set; }
+    public string Address { get; set; }
+}
