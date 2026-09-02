@@ -14,8 +14,9 @@ public static class MauiProgram
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 			});
+        builder.Services.AddScoped<ShopProductService>();
 
-		builder.Services.AddMauiBlazorWebView();
+        builder.Services.AddMauiBlazorWebView();
 		builder.Services.AddHttpClient<IShopCatalogService, ShopCatalogService>(client =>
 		{
 			client.BaseAddress = new Uri("https://api.example.test/");
