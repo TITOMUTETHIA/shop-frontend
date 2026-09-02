@@ -25,6 +25,8 @@ public static class MauiProgram
 
 
         builder.Services.AddScoped<IShopProductService, ShopProductService>();
+        builder.Services.AddScoped<IShoppingCartService, ShoppingCartService>();
+
 
 
 #if DEBUG
