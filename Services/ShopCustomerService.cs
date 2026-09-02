@@ -3,11 +3,11 @@ using ShopFrontend.Models;
 
 namespace ShopFrontend.Services
 {
-    public class CustomerService : ICustomerService
+    public class ShopCustomerService : ICustomerService
     {
         private readonly AppDbContext _context;
 
-        public CustomerService(AppDbContext context)
+        public ShopCustomerService(AppDbContext context)
         {
             _context = context;
         }
@@ -17,7 +17,7 @@ namespace ShopFrontend.Services
             return await _context.Customers.ToListAsync(cancellationToken);
         }
 
-        public async Task<Customer?> GetCustomerByIdAsync(int id, CancellationToken cancellationToken = default)
+        public async Task<ShopCustomer?> GetCustomerByIdAsync(int id, CancellationToken cancellationToken = default)
         {
             return await _context.Customers.FindAsync(new object[] { id }, cancellationToken);
         }
