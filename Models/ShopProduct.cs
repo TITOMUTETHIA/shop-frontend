@@ -1,6 +1,6 @@
 namespace ShopFrontend.Models;
 
-public class ShopCustomer
+public class ShopProduct
 {
     public int Id { get; set; }
     public string FullName { get; set; }
