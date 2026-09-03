@@ -2,12 +2,12 @@
 
 namespace ShopFrontend.Services
 {
-    public interface IOrderService
+    public interface IShopOrderService
     {
-        Task<IReadOnlyList<Order>> GetOrdersAsync(CancellationToken cancellationToken = default);
-        Task<Order?> GetOrderByIdAsync(int id, CancellationToken cancellationToken = default);
-        Task AddOrderAsync(Order order, CancellationToken cancellationToken = default);
-        Task UpdateOrderAsync(Order order, CancellationToken cancellationToken = default);
+        Task<IReadOnlyList<ShopOrder>> GetOrdersAsync(CancellationToken cancellationToken = default);
+        Task<ShopOrder?> GetOrderByIdAsync(int id, CancellationToken cancellationToken = default);
+        Task AddOrderAsync(ShopOrder order, CancellationToken cancellationToken = default);
+        Task UpdateOrderAsync(ShopOrder order, CancellationToken cancellationToken = default);
         Task DeleteOrderAsync(int id, CancellationToken cancellationToken = default);
     }
 }

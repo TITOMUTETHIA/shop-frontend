@@ -5,18 +5,20 @@ namespace ShopFrontend.Services
 {
     public class ShoppingCartService : IShoppingCartService
     {
-        private readonly AppDbContext _context;
+        private readonly IDbContextFactory<AppDbContext> _contextFactory;
 
-        public ShoppingCartService(AppDbContext context)
+        public ShoppingCartService(IDbContextFactory<AppDbContext> contextFactory)
         {
-            _context = context;
+            _contextFactory = contextFactory;
         }
 
         public async Task<IReadOnlyList<OrderItem>> GetCartItemsAsync(int customerId, CancellationToken cancellationToken = default)
         {
-            return await _context.OrderItems
+            // OrderId is nullable — cart items are those without an associated order.
+            await using var db = await _contextFactory.CreateDbContextAsync(cancellationToken);
+            return await db.OrderItems
                 .Include(i => i.Product)
-                .Where(i => i.OrderId == null && i.Order.CustomerId == customerId)
+                .Where(i => i.OrderId == null)
                 .ToListAsync(cancellationToken);
         }
 
@@ -29,30 +31,33 @@ namespace ShopFrontend.Services
                 UnitPrice = product.Price
             };
 
-            _context.OrderItems.Add(cartItem);
-            await _context.SaveChangesAsync(cancellationToken);
+            await using var db = await _contextFactory.CreateDbContextAsync(cancellationToken);
+            db.OrderItems.Add(cartItem);
+            await db.SaveChangesAsync(cancellationToken);
         }
 
         public async Task RemoveFromCartAsync(int customerId, int productId, CancellationToken cancellationToken = default)
         {
-            var item = await _context.OrderItems
+            await using var db = await _contextFactory.CreateDbContextAsync(cancellationToken);
+            var item = await db.OrderItems
                 .FirstOrDefaultAsync(i => i.ProductId == productId && i.OrderId == null, cancellationToken);
 
             if (item != null)
             {
-                _context.OrderItems.Remove(item);
-                await _context.SaveChangesAsync(cancellationToken);
+                db.OrderItems.Remove(item);
+                await db.SaveChangesAsync(cancellationToken);
             }
         }
 
         public async Task ClearCartAsync(int customerId, CancellationToken cancellationToken = default)
         {
-            var items = await _context.OrderItems
-                .Where(i => i.OrderId == null && i.Order.CustomerId == customerId)
+            await using var db = await _contextFactory.CreateDbContextAsync(cancellationToken);
+            var items = await db.OrderItems
+                .Where(i => i.OrderId == null)
                 .ToListAsync(cancellationToken);
 
-            _context.OrderItems.RemoveRange(items);
-            await _context.SaveChangesAsync(cancellationToken);
+            db.OrderItems.RemoveRange(items);
+            await db.SaveChangesAsync(cancellationToken);
         }
     }
 }

@@ -3,7 +3,9 @@ namespace ShopFrontend.Models;
 public class ShopProduct
 {
     public int Id { get; set; }
-    public string FullName { get; set; }
-    public string Email { get; set; }
-    public string Address { get; set; }
+    public string? Name { get; set; }
+    public decimal Price { get; set; }
+    public int Stock { get; set; }
+    public string? Category { get; set; }
+    public string? Description { get; set; }
 }

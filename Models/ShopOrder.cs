@@ -6,7 +6,7 @@ public class ShopOrder
     public DateTime OrderDate { get; set; }
 
     public int CustomerId { get; set; }
-    public Customer Customer { get; set; }
+    public ShopCustomer? Customer { get; set; }
 
     public List<OrderItem> Items { get; set; } = new();
 }
