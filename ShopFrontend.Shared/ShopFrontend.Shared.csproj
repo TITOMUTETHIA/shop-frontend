@@ -8,15 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+    <!-- Add Blazor component packages so the shared Razor components compile
+         when referenced from Blazor WebAssembly. Runtime-specific packages
+         (EF Core, ASP.NET Core frameworks) are provided by consuming apps. -->
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="10.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.11" />
+    <!-- Add EF Core abstractions for compile-time when shared by MAUI and Web projects -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.11" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.11" />
   </ItemGroup>
 
   <ItemGroup>
     <RazorComponent Include="..\Components\**\*.razor" Link="Components\%(RecursiveDir)%(Filename)%(Extension)" />
     <RazorComponent Include="..\Routes.razor" Link="Routes.razor" />
-    <Compile Include="..\Models\**\*.cs" Link="Models\%(RecursiveDir)%(Filename)%(Extension)" />
-    <Compile Include="..\Services\**\*.cs" Link="Services\%(RecursiveDir)%(Filename)%(Extension)" />
+    <!-- Include Models and Services only for non-Blazor-WASM builds (MAUI/backend). This avoids
+         bringing EF Core/server-only code into the WebAssembly build. -->
+    <Compile Include="..\Models\**\*.cs" Link="Models\%(RecursiveDir)%(Filename)%(Extension)" Condition="'$(RuntimeIdentifier)' != 'browser-wasm'" />
+    <Compile Include="..\Services\**\*.cs" Link="Services\%(RecursiveDir)%(Filename)%(Extension)" Condition="'$(RuntimeIdentifier)' != 'browser-wasm'" />
   </ItemGroup>
 
 </Project>
