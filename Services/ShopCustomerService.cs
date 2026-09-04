@@ -3,44 +3,49 @@ using ShopFrontend.Models;
 
 namespace ShopFrontend.Services
 {
-    public class ShopCustomerService : ICustomerService
+    public class ShopCustomerService : IShopCustomerService
     {
-        private readonly AppDbContext _context;
+        private readonly IDbContextFactory<AppDbContext> _contextFactory;
 
-        public ShopCustomerService(AppDbContext context)
+        public ShopCustomerService(IDbContextFactory<AppDbContext> contextFactory)
         {
-            _context = context;
+            _contextFactory = contextFactory;
         }
 
-        public async Task<IReadOnlyList<Customer>> GetCustomersAsync(CancellationToken cancellationToken = default)
+        public async Task<IReadOnlyList<ShopCustomer>> GetCustomersAsync(CancellationToken cancellationToken = default)
         {
-            return await _context.Customers.ToListAsync(cancellationToken);
+            await using var db = await _contextFactory.CreateDbContextAsync(cancellationToken);
+            return await db.Customers.ToListAsync(cancellationToken);
         }
 
         public async Task<ShopCustomer?> GetCustomerByIdAsync(int id, CancellationToken cancellationToken = default)
         {
-            return await _context.Customers.FindAsync(new object[] { id }, cancellationToken);
+            await using var db = await _contextFactory.CreateDbContextAsync(cancellationToken);
+            return await db.Customers.FindAsync(new object[] { id }, cancellationToken);
         }
 
-        public async Task AddCustomerAsync(Customer customer, CancellationToken cancellationToken = default)
+        public async Task AddCustomerAsync(ShopCustomer customer, CancellationToken cancellationToken = default)
         {
-            _context.Customers.Add(customer);
-            await _context.SaveChangesAsync(cancellationToken);
+            await using var db = await _contextFactory.CreateDbContextAsync(cancellationToken);
+            db.Customers.Add(customer);
+            await db.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task UpdateCustomerAsync(Customer customer, CancellationToken cancellationToken = default)
+        public async Task UpdateCustomerAsync(ShopCustomer customer, CancellationToken cancellationToken = default)
         {
-            _context.Customers.Update(customer);
-            await _context.SaveChangesAsync(cancellationToken);
+            await using var db = await _contextFactory.CreateDbContextAsync(cancellationToken);
+            db.Customers.Update(customer);
+            await db.SaveChangesAsync(cancellationToken);
         }
 
         public async Task DeleteCustomerAsync(int id, CancellationToken cancellationToken = default)
         {
-            var customer = await _context.Customers.FindAsync(new object[] { id }, cancellationToken);
+            await using var db = await _contextFactory.CreateDbContextAsync(cancellationToken);
+            var customer = await db.Customers.FindAsync(new object[] { id }, cancellationToken);
             if (customer != null)
             {
-                _context.Customers.Remove(customer);
-                await _context.SaveChangesAsync(cancellationToken);
+                db.Customers.Remove(customer);
+                await db.SaveChangesAsync(cancellationToken);
             }
         }
     }

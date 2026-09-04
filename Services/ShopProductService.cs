@@ -5,42 +5,47 @@ namespace ShopFrontend.Services
 {
     public class ShopProductService : IShopProductService
     {
-        private readonly AppDbContext _context;
+        private readonly IDbContextFactory<AppDbContext> _contextFactory;
 
-        public ShopProductService(AppDbContext context)
+        public ShopProductService(IDbContextFactory<AppDbContext> contextFactory)
         {
-            _context = context;
+            _contextFactory = contextFactory;
         }
 
         public async Task<IReadOnlyList<ShopProduct>> GetProductsAsync(CancellationToken cancellationToken = default)
         {
-            return await _context.Products.ToListAsync(cancellationToken);
+            await using var db = await _contextFactory.CreateDbContextAsync(cancellationToken);
+            return await db.Products.ToListAsync(cancellationToken);
         }
 
         public async Task<ShopProduct?> GetProductByIdAsync(int id, CancellationToken cancellationToken = default)
         {
-            return await _context.Products.FindAsync(new object[] { id }, cancellationToken);
+            await using var db = await _contextFactory.CreateDbContextAsync(cancellationToken);
+            return await db.Products.FindAsync(new object[] { id }, cancellationToken);
         }
 
         public async Task AddProductAsync(ShopProduct product, CancellationToken cancellationToken = default)
         {
-            _context.Products.Add(product);
-            await _context.SaveChangesAsync(cancellationToken);
+            await using var db = await _contextFactory.CreateDbContextAsync(cancellationToken);
+            db.Products.Add(product);
+            await db.SaveChangesAsync(cancellationToken);
         }
 
         public async Task UpdateProductAsync(ShopProduct product, CancellationToken cancellationToken = default)
         {
-            _context.Products.Update(product);
-            await _context.SaveChangesAsync(cancellationToken);
+            await using var db = await _contextFactory.CreateDbContextAsync(cancellationToken);
+            db.Products.Update(product);
+            await db.SaveChangesAsync(cancellationToken);
         }
 
         public async Task DeleteProductAsync(int id, CancellationToken cancellationToken = default)
         {
-            var product = await _context.Products.FindAsync(new object[] { id }, cancellationToken);
+            await using var db = await _contextFactory.CreateDbContextAsync(cancellationToken);
+            var product = await db.Products.FindAsync(new object[] { id }, cancellationToken);
             if (product != null)
             {
-                _context.Products.Remove(product);
-                await _context.SaveChangesAsync(cancellationToken);
+                db.Products.Remove(product);
+                await db.SaveChangesAsync(cancellationToken);
             }
         }
     }
