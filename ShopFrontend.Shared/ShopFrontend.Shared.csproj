@@ -21,10 +21,17 @@
   <ItemGroup>
     <RazorComponent Include="..\Components\**\*.razor" Link="Components\%(RecursiveDir)%(Filename)%(Extension)" />
     <RazorComponent Include="..\Routes.razor" Link="Routes.razor" />
-    <!-- Include Models and Services only for non-Blazor-WASM builds (MAUI/backend). This avoids
-         bringing EF Core/server-only code into the WebAssembly build. -->
+    <!-- Models are only required for non-WASM builds (they include EF types). -->
     <Compile Include="..\Models\**\*.cs" Link="Models\%(RecursiveDir)%(Filename)%(Extension)" Condition="'$(RuntimeIdentifier)' != 'browser-wasm'" />
-    <Compile Include="..\Services\**\*.cs" Link="Services\%(RecursiveDir)%(Filename)%(Extension)" Condition="'$(RuntimeIdentifier)' != 'browser-wasm'" />
+
+    <!-- Always include service interfaces so Blazor WebAssembly consumers can compile against them.
+         Concrete service implementations (EF-backed) remain excluded for browser-wasm. -->
+    <Compile Include="..\Services\IShopProductService.cs" Link="Services\IShopProductService.cs" />
+    <Compile Include="..\Services\IShoppingCartService.cs" Link="Services\IShoppingCartService.cs" />
+    <Compile Include="..\Services\IShopOrderService.cs" Link="Services\IShopOrderService.cs" />
+    <Compile Include="..\Services\IShopCustomerService.cs" Link="Services\IShopCustomerService.cs" />
+    <Compile Include="..\Services\IShopCatalogService.cs" Link="Services\IShopCatalogService.cs" />
+    <Compile Include="..\Services\IShopCategoryService.cs" Link="Services\IShopCategoryService.cs" Condition="Exists('..\\Services\\IShopCategoryService.cs')" />
   </ItemGroup>
 
 </Project>

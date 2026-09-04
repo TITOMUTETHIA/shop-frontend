@@ -19,7 +19,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <EnableDefaultCssItems>false</EnableDefaultCssItems>
         <Nullable>enable</Nullable>
-        <DefaultItemExcludes>$(DefaultItemExcludes);ShopFrontend.Web\**;ShopFrontend.Shared\**;Components\**;Models\**;Services\**;Routes.razor</DefaultItemExcludes>
+        <DefaultItemExcludes>$(DefaultItemExcludes);ShopFrontend.Web\**;ShopFrontend.Shared\**;Routes.razor</DefaultItemExcludes>
 
         <!-- Enable XAML source generation for faster build times and improved performance.
              This generates C# code from XAML at compile time instead of runtime inflation.
