@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Maui.Essentials;
+using System.IO;
 using ShopFrontend.Models;
 using ShopFrontend.Services;
 
@@ -16,8 +18,10 @@ public static class MauiProgram
 
 			// Register EF Core DbContextFactory using SQLite. Use a factory to create short-lived
 			// DbContext instances per operation which is safer for MAUI/Blazor lifetimes.
+			// Store DB in platform app data directory to avoid permission/OneDrive issues.
+			var dbPath = Path.Combine(FileSystem.AppDataDirectory, "shop.db");
 			builder.Services.AddDbContextFactory<AppDbContext>(options =>
-				options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection") ?? "Data Source=shop.db"));
+				options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection") ?? $"Data Source={dbPath}"));
 			builder
 			.UseMauiApp<App>()
 			.ConfigureFonts(fonts =>
