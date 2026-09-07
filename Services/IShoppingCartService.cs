@@ -1,12 +1,13 @@
-﻿using ShopFrontend.Models;
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
+using ShopFrontend.Models;
 
-namespace ShopFrontend.Services
+namespace ShopFrontend.Services;
+
+public interface IShoppingCartService
 {
-    public interface IShoppingCartService
-    {
-        Task<IReadOnlyList<OrderItem>> GetCartItemsAsync(int customerId, CancellationToken cancellationToken = default);
-        Task AddToCartAsync(int customerId, ShopProduct product, int quantity, CancellationToken cancellationToken = default);
-        Task RemoveFromCartAsync(int customerId, int productId, CancellationToken cancellationToken = default);
-        Task ClearCartAsync(int customerId, CancellationToken cancellationToken = default);
-    }
+    Task AddToCartAsync(ShopProduct product, int quantity = 1, CancellationToken cancellationToken = default);
+    Task RemoveFromCartAsync(int productId, CancellationToken cancellationToken = default);
+    Task<IReadOnlyList<ShopProduct>> GetCartItemsAsync(CancellationToken cancellationToken = default);
 }
