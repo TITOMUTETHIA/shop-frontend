@@ -5,6 +5,7 @@ using Microsoft.Maui.Essentials;
 using System.IO;
 using ShopFrontend.Models;
 using ShopFrontend.Services;
+using ShopFrontend.Data;
 
 namespace ShopFrontend;
 
@@ -32,10 +33,11 @@ public static class MauiProgram
 
 
         builder.Services.AddMauiBlazorWebView();
-        builder.Services.AddScoped<IShopProductService, ShopProductService>();
-        builder.Services.AddScoped<IShoppingCartService, ShoppingCartService>();
-        builder.Services.AddScoped<IShopCustomerService, ShopCustomerService>();
-        builder.Services.AddScoped<IShopOrderService, ShopOrderService>();
+		// Use local in-memory implementations now that the Shared/Web projects were removed
+		builder.Services.AddScoped<IShopProductService, LocalShopProductService>();
+		builder.Services.AddScoped<IShoppingCartService, LocalShoppingCartService>();
+		builder.Services.AddScoped<IShopCustomerService, LocalShopCustomerService>();
+		builder.Services.AddScoped<IShopOrderService, LocalShopOrderService>();
         builder.Services.AddScoped<IShopCatalogService, ShopCatalogService>();
         builder.Services.AddHttpClient<IShopCatalogService, ShopCatalogService>(client =>
 		{

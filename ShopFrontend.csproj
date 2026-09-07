@@ -19,7 +19,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <EnableDefaultCssItems>false</EnableDefaultCssItems>
         <Nullable>enable</Nullable>
-        <DefaultItemExcludes>$(DefaultItemExcludes);ShopFrontend.Web\**;ShopFrontend.Shared\**;Routes.razor</DefaultItemExcludes>
+        <DefaultItemExcludes>$(DefaultItemExcludes);ShopFrontend.Web\**;ShopFrontend.Shared\**</DefaultItemExcludes>
 
         <!-- Enable XAML source generation for faster build times and improved performance.
              This generates C# code from XAML at compile time instead of runtime inflation.
@@ -78,7 +78,7 @@
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
           <PrivateAssets>all</PrivateAssets>
         </PackageReference>
-        <ProjectReference Include="ShopFrontend.Shared\ShopFrontend.Shared.csproj" />
+        <!-- ProjectReference to ShopFrontend.Shared removed because the web/shared project was deleted. Shared code should be moved into this MAUI project if needed. -->
         <PackageReference Include="Microsoft.Maui.Controls" Version="10.0.20" />
         <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="10.0.20" />
       
