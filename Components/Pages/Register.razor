@@ -1,0 +1,55 @@
+@page "/register"
+@using ShopFrontend.Models
+@using ShopFrontend.Services
+@inject IShopCustomerService CustomerService
+@inject NavigationManager NavManager
+
+<div class="simple-page auth-page">
+    <section class="auth-card">
+        <span class="brand-mark">+</span>
+        <span class="eyebrow">CREATE ACCOUNT</span>
+        <h1>Welcome — let’s get started.</h1>
+        <p>Create an account to save your orders and preferences.</p>
+
+        <label>Full name
+            <input class="form-input" @bind="FullName" placeholder="Jane Doe" />
+        </label>
+
+        <label>Email address
+            <input class="form-input" type="email" @bind="Email" placeholder="you@example.com" />
+        </label>
+
+        <label>Password
+            <input class="form-input" type="password" @bind="Password" placeholder="Create a password" />
+        </label>
+
+        <label>Delivery address
+            <input class="form-input" @bind="Address" placeholder="123 Main St, City" />
+        </label>
+
+        <button class="checkout-button" @onclick="OnRegister">Create account <span>→</span></button>
+
+        <small>Already have an account? <a href="/login">Sign in</a></small>
+    </section>
+</div>
+
+@code {
+    private string FullName { get; set; } = string.Empty;
+    private string Email { get; set; } = string.Empty;
+    private string Password { get; set; } = string.Empty;
+    private string Address { get; set; } = string.Empty;
+
+    private async Task OnRegister()
+    {
+        var customer = new ShopCustomer
+        {
+            FullName = FullName,
+            Email = Email,
+            Address = Address
+        };
+
+        await CustomerService.SetCurrentCustomerAsync(customer);
+        // Navigate to home after registration
+        NavManager.NavigateTo("/");
+    }
+}
