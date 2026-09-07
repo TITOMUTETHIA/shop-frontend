@@ -1,37 +1,8 @@
-﻿@inherits LayoutComponentBase
-@using ShopFrontend.Services
-@inject IShopProductService ProductService
-@inject IShoppingCartService CartService
-@inject IShopCategoryService CategoryService
-@inject IShopOrderService OrderService
-@inject IShopCustomerService ShopCustomerService
-@implements IDisposable
-@inject NavigationManager Navigation
+@namespace ShopFrontend.Components.Layout
 
-<div class="app-shell">
+<div class="app-root">
     <NavMenu />
-    <main class="app-main" @key="currentPath">
+    <main class="content">
         @Body
     </main>
 </div>
-
-@code {
-    private string currentPath = string.Empty;
-
-    protected override void OnInitialized()
-    {
-        currentPath = Navigation.Uri;
-        Navigation.LocationChanged += HandleLocationChanged;
-    }
-
-    private void HandleLocationChanged(object? sender, LocationChangedEventArgs args)
-    {
-        currentPath = args.Location;
-        InvokeAsync(StateHasChanged);
-    }
-
-    public void Dispose()
-    {
-        Navigation.LocationChanged -= HandleLocationChanged;
-    }
-}
